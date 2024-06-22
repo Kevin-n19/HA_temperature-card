@@ -6,8 +6,6 @@ A custom temperature card for Home Assistant to display temperature or humidity,
 ![image](https://github.com/Kevin-n19/HA_temperature-card/assets/120246712/25a33d16-c3ca-4503-ac35-bb2b380cbd55)
 
 
-
-
 ## Installation
 
 ### Manual Installation
