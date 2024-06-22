@@ -14,20 +14,21 @@ A custom temperature card for Home Assistant to display temperature or humidity,
 
 1. Download the `temperature-card.js` file from the [latest release](https://github.com/Kevin-n19/HA_temperature-card.git).
 2. Place the file in your `config/www` folder.
-3. Add the following to your `ui-lovelace.yaml` or manage resources in the Lovelace UI:
+
+## Use card in dashboard
 
 ### Add ressources
 ![image](https://github.com/Kevin-n19/HA_temperature-card/assets/120246712/b85f66ac-0d96-47f8-abe5-f6441a2dd8b2)
 ![image](https://github.com/Kevin-n19/HA_temperature-card/assets/120246712/ac2be527-a12e-4b0e-ac8b-a1691794b24e)
 
-#### in YAML
+#### In YAML
 ```yaml
 resources:
   - url: /local/temperature-card.js
     type: module
 ```
 
-## Yaml Configuration
+## Add card in dashboard
 
 Add a custom button-card to your dashboard.
 Some values has default value. battery_entity is optional. 
