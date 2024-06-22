@@ -1,0 +1,7 @@
+{
+  "name": "temperature-card",
+  "content_in_root": false,
+  "render_readme": true,
+  "filename": "temperature-card.js",
+  "homeassistant": "2024.1.0"
+}
