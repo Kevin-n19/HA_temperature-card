@@ -36,19 +36,25 @@ Some values has default value. battery_entity is optional.
 ![image](https://github.com/Kevin-n19/HA_temperature-card/assets/120246712/79e98117-18b6-43dc-8ab2-c4dc205a011c)
 ![image](https://github.com/Kevin-n19/HA_temperature-card/assets/120246712/ff7e8dd6-c9dd-4ecd-83db-58d3ed7cfa8c)
 
+- name (Required): The name to be displayed on the card.
+- entity (Required): The entity ID of the temperature sensor.
+- entity_unit (Optional): The unit of measurement to display (default: '°C').
+- entity_icon (Optional): The icon to display (default: 'mdi:temperature').
+- battery_entity (Optional): The entity ID of the battery sensor.
+- battery_low_threshold (Optional): The battery level at which to show a low battery warning (default: 11%).
+- update_threshold (Optional): The threshold in minutes for showing the last update time (default: 60min).
+- entity_high_level (Optional): The high level threshold for the entity value (default: 22).
+- entity_low_level (Optional): The low level threshold for the entity value (default: 18).
 
 ```yaml
 type: custom:temperature-card
 name: Living Room
-entity: sensor.living_room_temperature
-
-#option for change the default value.
-entity_unit: '°C'
-entity_icon: mdi:thermometer
-entity_high_level: 25
-entity_low_level: 18
-update_threshold: 60
-#for show the baterry level on this card. Optional, if not set the icon has hide.
+entity: sensor.living_room_humidity
+entity_unit: '%'
+entity_icon: 'mdi:water-percent'
+entity_high_level: 80
+entity_low_level: 60
+update_threshold: 20
 battery_entity: sensor.living_room_battery
-battery_low_threshold: 11
+battery_low_threshold: 5
 ```
