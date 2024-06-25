@@ -1,9 +1,7 @@
 {
     "name": "Temperature Card",
     "content_in_root": false,
+    "render_readme": true,
     "filename": "src/temperature-card.js",
-    "domains": ["lovelace"],
-    "country": "FR",
-    "homeassistant": "0.110.0",
-    "render_readme": true
+    "homeassistant": "2023.7.0"
   }

@@ -1,9 +1,0 @@
-{
-  "domain": "exemple_integration",
-  "name": "Ha-Temperature_Card",
-  "documentation": "https://exemple.com/documentation",
-  "dependencies": [],
-  "codeowners": ["Kevin-n19"],
-  "version": "1.0.0",
-  "requirements": ["bibliotheque==1.2.3"]
-}
