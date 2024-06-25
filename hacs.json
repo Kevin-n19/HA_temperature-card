@@ -2,6 +2,6 @@
     "name": "Temperature Card",
     "content_in_root": false,
     "render_readme": true,
-    "filename": "src/temperature-card.js",
-    "homeassistant": "2023.7.0"
+    "filename": "dist/temperature-card.js",
+    "homeassistant": "2024.1.0"
   }
