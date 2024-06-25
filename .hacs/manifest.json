@@ -1,10 +1,9 @@
 {
-    "name": "Temperature Card",
-    "content_in_root": false,
-    "filename": "src/temperature-card.js",
-    "domains": ["lovelace"],
-    "country": "FR",
-    "homeassistant": "0.110.0",
-    "render_readme": true
-  }
-  
+  "domain": "exemple_integration",
+  "name": "Ha-Temperature_Card",
+  "documentation": "https://exemple.com/documentation",
+  "dependencies": [],
+  "codeowners": ["Kevin-n19"],
+  "version": "1.0.0",
+  "requirements": ["bibliotheque==1.2.3"]
+}
