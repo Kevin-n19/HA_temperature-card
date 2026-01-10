@@ -85,12 +85,13 @@ class TemperatureCard extends LitElement {
       
       const entity_unit = this.config.entity_unit ;
       const entity_icon = this.config.entity_icon ? this.config.entity_icon : 'mdi:thermometer';
+      const formatedTemp = parseFloat(entity.state).toFixed(1);
         
       return html`
         <div class="update ${updateClass}" @click=${this._handleClick}><ha-icon icon="mdi:clock"></ha-icon>${diff}</div>
         <div class="icon ${entityLevelColor}" @click=${this._handleClick}><ha-icon icon="${entity_icon}"></ha-icon></div>
          ${hasbattery == 'show' ? html`<div class="battery ${batteryClass}" @click=${this._handleClick}><ha-icon icon="mdi:battery"></ha-icon>${batteryLevel}%</div>` : html``}
-        <div class="temp" @click=${this._handleClick} >${entity.state} ${entity_unit}</div>
+        <div class="temp" @click=${this._handleClick} >${formatedTemp} ${entity_unit}</div>
         <div class="name" @click=${this._handleClick} >${this.config.name}</div>
       `;
   }
