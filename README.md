@@ -8,9 +8,20 @@ A custom temperature card for Home Assistant to display temperature or humidity,
 
 ## Installation
 
+### HACS Installation (Recommended)
+
+1. Open HACS in your Home Assistant instance
+2. Click on the 3 dots in the top right corner
+3. Select "Custom repositories"
+4. Add this repository URL: `https://github.com/Kevin-n19/HA_temperature-card`
+5. Select category: "Dashboard"
+6. Click "Add"
+7. Find "Temperature Card" in HACS and click "Download"
+8. Restart Home Assistant
+
 ### Manual Installation
 
-1. Download the `temperature-card.js` file from the [latest release](https://github.com/Kevin-n19/HA_temperature-card.git).
+1. Download the `HA_temperature-card.js` file from the [latest release](https://github.com/Kevin-n19/HA_temperature-card.git).
 2. Place the file in your `config/www` folder.
 
 ## Use card in dashboard
@@ -22,7 +33,7 @@ A custom temperature card for Home Assistant to display temperature or humidity,
 #### In YAML
 ```yaml
 resources:
-  - url: /local/temperature-card.js
+  - url: /local/HA_temperature-card.js
     type: module
 ```
 
