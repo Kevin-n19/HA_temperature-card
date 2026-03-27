@@ -54,6 +54,9 @@ Some values has default value. battery_entity is optional.
 - update_threshold (Optional): The threshold in minutes for showing the last update time (default: 60min).
 - entity_high_level (Optional): The high level threshold for the entity value (default: 22).
 - entity_low_level (Optional): The low level threshold for the entity value (default: 18).
+- entity_high_color (Optional): The icon color when value exceeds `entity_high_level` (default: `var(--error-color, red)`).
+- entity_low_color (Optional): The icon color when value is below `entity_low_level` (default: `var(--blue-color, blue)`).
+- entity_normal_color (Optional): The icon color when value is in normal range (default: `var(--primary-text-color, black)`).
 
 ```yaml
 type: custom:temperature-card
@@ -63,6 +66,9 @@ entity_unit: '%'
 entity_icon: 'mdi:water-percent'
 entity_high_level: 80
 entity_low_level: 60
+entity_high_color: 'orange'
+entity_low_color: 'purple'
+entity_normal_color: 'green'
 update_threshold: 20
 battery_entity: sensor.living_room_battery
 battery_low_threshold: 5
